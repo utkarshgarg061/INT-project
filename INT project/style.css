@@ -11,9 +11,16 @@ body{
 	align-items: center;
 	padding: 20px;
 }
+.cart{
+	display: flex;
+	align-items: center;
+	padding: 20px;
+}
 nav{
 	flex: 1;
 	text-align: right;
+	background:radial-gradient(white,black);
+
 }
 nav ul{
 	display: inline-block;
@@ -22,6 +29,9 @@ nav ul{
 nav ul li{
 	display: inline-block;
 	margin-right: 20px;
+}
+nav ul a{
+	color: white;
 }
 .logo{
 	color:white ;
@@ -49,12 +59,43 @@ p{
 	ge image will not cut and will be within the webpage*/
 	justify-content: space-around;
 }
+.row5{
+	padding: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+.row6{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 550px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	height: 300px;
+	width: 500px;
+}
+.categories .row5 {
+	box-shadow: 0 0 20px 0px rgba(0,0,0,0.3);
+	transition: transform 0.5s;
+}
+.categories .row5:hover{
+	transform:translateY(-10px);
+}
+.categories .row6 {
+	transition: transform 0.5s;
+}
+.categories .row6:hover{
+	transform:translateY(-10px);
+}
 .col2{
 	flex-basis: 50%;
 	min-width: 300px;
 }
 .col2 img{
-	max-width: 100%; 
+	max-width: 100%;
+	padding-bottom: 30px;
 }
 p.col1p{
 	padding: 5px 0;
@@ -66,7 +107,7 @@ p.col1p{
 .btn{
 	display: inline-block;/*coz of inline styling is only till explore now otherwise
 	 whole line will be styled*/
-	background: darkorange;
+	background: black;
 	color:white;
 	padding: 8px 30px;
 	margin: 15px 0;
@@ -74,7 +115,7 @@ p.col1p{
 	transition: background 0.5s;
 }
 .header{
-	background:radial-gradient(#fff,#ffd6d6);
+	background:radial-gradient(white,black);
 }
 .header .row{
 	margin: 50px;
@@ -82,15 +123,9 @@ p.col1p{
 .btn:hover{
 	background:#563434;
 }
-.categories{
-	margin:70px;
-}
 .col3{
 	flex-basis:30%;
 	min-width: 250px;
-}
-.col3 img{
-	width: 100%;
 }
 .small_container{
 	max-width: 1080px;
@@ -104,6 +139,7 @@ p.col1p{
 	padding: 10px;
 	min-width: 200px;
 	margin-bottom: 50px;
+	box-shadow: 0 0 20px 0px rgba(0,0,0,0.3);
 	transition: transform 0.5s;
 }
 .col4 img{
@@ -118,13 +154,13 @@ p.col1p{
 }
 .title::after{
 	content: '';/*if w ewrite something in content that will be displayed under the line*/
-	background:darkorange;
-	width: 80px;
+	background:red;
+	width: 300px;
 	height: 5px;
 	border-radius: 5px;
 	position: absolute;
 	bottom: 0;
-	left: 45%;
+	left: 35%;
 }
 h4{
 	color: #555;
@@ -134,7 +170,7 @@ h4{
 	font-size: 14px;
 }
 .rating .fa{
-	color: #ff532b;
+	color: red;
 }
 .col4:hover{
 	transform: translateY(5px);
@@ -146,8 +182,11 @@ h4{
 	justify-content: space-around;
 	margin-top: 10px;
 }
+.backcolor{
+	background:radial-gradient(white,black);
+}
 .offer{
-	background:radial-gradient(#fff,#ffd6d6);
+	background:radial-gradient(white,black);
 }
 .small{
 	color: #555;
@@ -171,11 +210,11 @@ h4{
 	transform: translateY(-10px);
 }
 .fa.fa-quote-left{
-	color: darkorange;
+	color: red;
 	font-size: 34px;
 }
 .fa.fa-quote-right{
-	color: darkorange;
+	color: red;
 	font-size: 34px;
 }
 /*---------------footer---------------*/
@@ -261,7 +300,7 @@ e applied only to webpage when it is less than 800px*/
 	margin:50px 0 20px;
 }
 select{
-	border: 1px solid red;
+	border: 1px solid black;
 	padding: 5px;
 }
 select:focus{
@@ -272,7 +311,7 @@ select:focus{
 }
 .page_btn span{
 	display: inline-block;
-	border:1px solid #ff532b;
+	border:1px solid black;
 	margin-left: 10px;
 	width: 40px;
 	height: 40px;
@@ -281,18 +320,19 @@ select:focus{
 	cursor: pointer;
 }
 .page_btn span:hover{
-	background: #ff532b;
+	background:radial-gradient(white,black);
 	transition: 0.25s;
-	color:white;
+	color:black;
 }
 
 /*---------------------single product details----------------------*/
 
 .single_product{
-	margin-top: 80px;
+	margin-top: 40px;
 }
 .single_product .col2 img{
 	padding: 0;
+	box-shadow: 0 0 20px 0px rgba(0,0,0,0.3);
 }
 .single_product .col2{
 	padding: 20px;
@@ -313,7 +353,7 @@ select:focus{
 	padding-left: 10px;
 	font-size: 20px;
 	margin-right: 10px;
-	border:1px solid #ff532b;
+	border:1px solid black;
 }
 input:focus{
 	outline: none;
@@ -327,6 +367,7 @@ input:focus{
 	justify-content: space-between;
 }
 .small_img_col{
+	box-shadow: 0 0 20px 0px rgba(0,0,0,0.3);
 	flex-basis: 24%;
 	cursor: pointer;
 }
@@ -334,6 +375,7 @@ input:focus{
 	justify-content: space-between;
 	margin-top: 50px;
 }
+
 
 /*media query for less than 600 screen size(phones)*/
 
@@ -356,4 +398,120 @@ input:focus{
 		line-height: 32px;
 
 	}
+	/*--------cart page------*/
+	.cart_info p{
+		display: none;
+	}
+}
+/*-------------cart items-------------------*/
+
+.cart_page{
+	margin: 80px auto;
+}
+table{
+	width: 100%;
+	border-collapse: collapse;
+}
+.cart_info{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+th{
+	text-align: center;
+	padding: 5px;
+	color: black;
+	background:radial-gradient(white,black);
+	font-weight: bold;
+}
+td{
+	padding: 10px 5px;
+}
+td input{
+	width: 40px;
+	height: 30px;
+	padding: 5px;
+}
+td a{
+	color: red;
+	font-size:12px;
+}
+td img{
+	width: 120px;
+	height: 120px;
+	margin-right: 10px;
+}
+.total_prize{
+	display: flex;
+	justify-content: flex-end;
+}
+.total_prize table{
+	border-top: 3px solid black;
+	width: 100%;
+	max-width:380px;
+}
+td:last-child{
+	text-align: right;
+}
+th:last-child{
+	text-align: right;
+}
+.place_order{
+	text-align: right;
+	margin-top: 10px;
+}
+/*-----------Account page----------*/
+.account_page{
+	padding: 50px 0;
+	background: radial-gradient(white,black);
+}
+.form_container{
+	background: white;
+	width: 300px;
+	height: 400px;
+	position: relative;
+	text-align: center;
+	padding: 20px 0;
+	margin:auto;
+	box-shadow: 0 0 20px 0px rgba(0,0,0,0.3);
+	overflow: hidden;
+}
+.form_container span{
+	font-weight: bold;
+	padding: 0 10px;
+	cursor: pointer;
+	color: #555;
+	width: 100px;
+	display: inline-block;
+}
+.form_btn{
+	display: inline-block;
+}
+.form_container form{
+	max-width: 300px;
+	padding: 0 20px;
+	position: absolute;
+	top: 130px;
+}
+form input{
+	width: 100%;
+	height: 30px;
+	margin:10px 0;
+	padding: 0 10px;
+	border:1px solid #ccc;
+}
+form .btn{
+	width: 100%;
+	border:none;
+	cursor: pointer;
+	margin:10px 0;
+}
+form .btn:focus{
+	outline: none;
+}
+#loginform{
+	left: -300px;
+}
+#registerform{
+	left: 0;
 }
