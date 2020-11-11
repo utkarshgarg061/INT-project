@@ -25,7 +25,7 @@
 			<li><a href="">Account</a></li>
 		</ul>
 	</nav>
-	<div class="cart"><i class="fa fa-shopping-cart" style="color: black"></i>
+	<a href="cart.html"><div class="cart"><i class="fa fa-shopping-cart" style="color: black"></i></a>
 	<i class="fa fa-bars" onclick="menutoggle()" style="color: black"></i></div>
 </div>
 	</div>
@@ -41,17 +41,17 @@
 							
 						</div>
 						<form id="loginform">
-							<input type="text" placeholder="Username">
-							<input type="password" placeholder="Password">
-							<button type="submit" class="btn">Login</button>
-							<a href="">Forgot Password</a>
+							<input id="username1" type="text" placeholder="Username" required>
+							<input id="password1" type="password" placeholder="Password" required>
+							<button type="submit" class="btn" onclick="validatelogin()">Login</button>
+							<a href="" >Forgot Password</a>
 						</form>
 
 						<form id="registerform">
-							<input type="text" placeholder="Username">
-							<input type="email" placeholder="E-mail">
-							<input type="password" placeholder="Password">
-							<button type="submit" class="btn">Register</button>
+							<input type="text" placeholder="Username" name="Username"required>
+							<input type="email" placeholder="E-mail" required>
+							<input type="password" placeholder="Password" required>
+							<button type="submit" class="btn" onclick="validatereg()">Register</button>
 						</form>
 					</div>
 				</div>
@@ -133,7 +133,27 @@
 			loginform.style.transition="transform 1s";
 			indicator.style.transform="translateX(0px)";
 		}
-		fu
+	</script>
+	<script>
+		function validatelogin(){
+			var x=document.getElementById("username1");
+			var y=document.getElementById("password1");
+			if(x=="Utkarsh" && y=="123456")
+			{
+				alert("Logged In successfully");
+				window.open("htmlpage.html");
+				window.close("account.html");
+			}
+			else
+			{
+				alert("Invalid Credentials");
+			}
+		}
+		function validatereg(){
+			alert("Registered successfully");
+			window.open("htmlpage.html");
+			window.close("account.html");
+		}
 	</script>
 </body>
 
